@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda de Magia</title>
+    <link rel="shortcut icon" href="./images/logotipo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Bree+Serif&family=Bungee+Spice&family=Madimi+One&family=Merienda:wght@300..900&family=Righteous&family=Special+Elite&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="encabezado">
+        <div class="logotipo">
+            <img src="./images/logotipo.png" alt="logo">
+        </div>
+        <div class="logo">Mi Tienda Juegos Craft</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="encabque">
+        <h1>Cambios y devoluciones</h1>
+
+    </div>
+    <section class="CamyDev">
+        <div class="cambiosyDev caja-negra">
+            <h3>¿Puedo cambiar mi producto? ¡Sí, por supuesto! Todas las compras realizadas admiten cambio.</h3>
+
+            <h3>Te brindamos 2 opciones:</h3>
+            <ul>
+                <li>En sucursal: podes acercarte a cualquiera de nuestras sucursales y hacer el cambio sin costo
+                    alguno.
+                    <p>Hace click en el siguente enlace para ver todas las <a href="">Sucursales</a> disponibles.
+                    </p>
+                </li>
+                <li>Mediantes el formulario ubicado al final de la pagina.</li>
+            </ul>
+            <h3>-Plazos y condiciones:</h3>
+            <ul>
+                <li>Si el producto posee falla de fábrica o no corresponde al seleccionado (durante el proceso de
+                    compra)
+                    se procederá a realizar de inmediato el cambio del mismo, sin costo adicional.</li>
+                <li>Si no estás conforme con tu producto, podes solicitar el cambio o devolución dentro de los diez
+                    días corridos contados a partir de la fecha en que lo recibiste/retiraste.</li>
+                <li>Si el producto no presentara fallas ni errores; y aun así quisieras realizar el cambio, podes
+                    hacerlo
+                    completando el formulario . En este caso la empresa no se hará
+                    cargo de
+                    los costos de envío en los que se incurra.
+                    (Tené en cuenta que, para realizar el cambio del producto por otro nuevo; el mismo, tiene que
+                    encontrarse en stock en la página al momento de tu solicitud.)</li>
+                <li>Para hacer efectivo el cambio o devolución de un producto el mismo deberá estar acompañado del
+                    ticket
+                    de compra o correo electrónico enviado informando confirmación de facturación de compra.</li>
+                <li> Es necesario para la devolución, que el producto se encuentre sin uso, en perfectas
+                    condiciones, con
+                    etiquetas, accesorios y empaques originales. De lo contrario no se procederá al cambio.</li>
+                <li>Una vez que nos llegue vamos a controlar que el producto este sin uso, y te vamos a reintegrar
+                    el
+                    dinero al medio por el cual pagaste.
+            </ul>
+
+        </div>
+
+        <div class="quejasForm">
+            <h2>Reclamos</h2>
+            <form action="." method="get" name="formquejas">
+                <label class="descquejas" for="nquejas">Nombre:</label>
+                <input class="forms1" type="text" name="nquejas" id="nquejas" placeholder="Nombre:">
+                
+                <label class="descquejas" for="npedido">N° de pedido:</label>
+                <input class="forms1" type="number" name="npedido" id="npedido" placeholder="Example: #101010">
+
+                <label class="descquejas" for="email">Email:</label>
+                <input class="forms1" type="email" name="correo" id="correo"
+                    placeholder="Ingrese su correo electronico">
+
+                <label class="descquejas" for="fechanac">Fecha de compra:</label>
+                <input class="forms1" type="date" name="fechanac" id="fechanac">
+
+                <label class="descquejas" for="tel">Telefono (opcional):</label><br>
+                <input class="forms1" type="number" name="tel" id="tel">
+                <label class="descquejas" for="problema">Indique problema:</label>
+                <select class="archivo" name="problema" id="problema">
+                    <option value="">--Seleccione--</option>
+                    <option value="llegar">No llegó</option>
+                    <option value="defec">Llegó roto/defectuoso</option>
+                    <option value="otro">No era lo que pedí</option>
+                </select><br>
+                <textarea class="forms1" name="comentario" placeholder="Realice su descargo"
+                    style="width: 100%; height:200px;"></textarea>
+                <h6>*En caso de que el producto haya llegado en mal estado o no sea el correcto*</h6>
+
+                <label class="descquejas" for="foto">Ingrese Archivo:</label>
+                <input class="form-control" type="file" name="foto" id="foto" accept="image/png, image/jpeg">
+                <input class="botonc" name="btnquejas" id="btnquejas" type="submit" value="Registrar">
+            </form>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+
+    <!--FOOTER NEWSLETTER FORMULARIO-->
+    <footer>
+        <div class="seccion-footer">
+            <form class="suscripcion">
+                <label for="email">Newsletter:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Tu e-mail"><br><br>
+                <input type="submit" value="Suscribirse">
+            </form>
+
+        </div>
+
+        <!--FOOTER LINKS NAVEGACION-->
+
+        <div class="seccion-footer">
+
+            <nav class="nav-footer">
+                <h6>Navegación</h6>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--FOOTER REDES SOCIALES-->
+
+        <div class="seccion-footer">
+            <h6>Seguinos en nuestras redes:</h6>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png"
+                        alt="instagram"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="./images/whatsapp.png" alt="whatsapp"></a>
+            </div>
+            <div class="faq">
+                <p>¿Tenes dudas o consultas? escribinos <a href="contacto.html"><span class="aqui">AQUI</span></a></p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--DERECHOS RESERVADOS-->
+
+    <div class="derechos">
+        <p>&copy; 2024 Todos los derechos reservados - Grupo 11 Codo a Codo Python FullStack</p>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

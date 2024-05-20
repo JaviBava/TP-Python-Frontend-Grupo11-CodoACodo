@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container-reg">
+        <a href="index.html">
+            <img src="./images/volver.png" alt="regresar">
+        </a>
+        <section class="form-registro">
+            <h2>Registro</h2>
+            <form method="get" name="formularioreg" id="formularioreg">
+                <label for="nom">Nombre:</label>
+                <input class="forminicio" type="nom" name="nom" id="nomreg">
+                <div id="errorNombre" class="error"></div>
+                <label for="subnom">Apellido:</label>
+                <input class="forminicio" type="subnom" name="subnom" id="subnom">
+                <div id="errorApellido" class="error"></div>
+                <label for="email">Direccion de correo electrónico:</label>
+                <input class="forminicio" type="email" name="correo" id="correoreg" placeholder="">
+                <div id="errorCorreo" class="error"></div>
+                <label for="password">Contraseña:</label>
+                <input class="forminicio" type="password" id="passwordreg">
+                <div id="errorContraseña" class="error"></div>
+                <button type="submit" class="btn" id="btnregistrar">Registrarse</button>
+            </form>
+        </section>
+
+        <div class="popup" id="popup">
+            <img src="./images/check.png" alt="check">
+            <h2>Gracias!</h2>
+            <p><span>Perfecto </span><span id="remnom">nombre</span>! Te has registrado correctamente.</p>
+            <button type="submit" class="btn" id="botonpopup">Volver al inicio</a>
+        </div>
+    </div>
+
+    <!--Llama al archivo de js-->
+    <script src="./js/Validacion-reg.js"></script>
+
+</body>
+
+</html>

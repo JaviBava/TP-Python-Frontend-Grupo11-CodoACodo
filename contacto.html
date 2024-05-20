@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda de Magia</title>
+    <link rel="shortcut icon" href="./images/logotipo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+        <style>
+            .error {
+        color: rgb(160, 24, 24);
+        display: none; 
+    }
+        </style>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="encabezado">
+        <div class="logotipo">
+            <img src="./images/logotipo.png" alt="logo">
+        </div>
+        <div class="logo">Mi Tienda Juegos Craft</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li class="activo"><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="contact">
+        <div class="comopo">
+            <h1>Contactanos</h1>
+            <p>¿Tenes preguntas, sugerencias o querés sumarte a nosotros? Escribinos y estaremos encantados de ayudarte
+                y despejar todas tus dudas.</p>
+            <h4>Completa el siguente formulario:</h4>
+        </div>
+
+        <div class="containerbot">
+            <form class="contacto" name="formcontacto">
+                <div class="nombre row g-4 m-3">
+                    <div>
+                        <label for="nominput" class="form-label">Nombre:</label>
+                        <input type="text" name="nomcontacto" id="nomcontacto" class="form-control" id="nominput" placeholder="Escribe tu nombre">
+                        <span class="error" id="error-nombre">* El campo "nombre" es obligatorio.</span>
+                    </div>
+                    <div>
+                        <label for="subnominput" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" name="subnominput" id="subnominput" placeholder="Escribe tu apellido">
+                        <span class="error" id="error-apellido">* El campo "apellido" es obligatorio.</span>
+                    </div>
+                </div>
+            
+                <div class="mail row g-4 m-3">
+                    <div>
+                        <label for="emailinput" class="form-label">Email:</label>
+                        <input type="email" class="form-control" name="emailinput" id="emailinput" placeholder="Escribe tu Email">
+                        <span class="error" id="error-email">* El campo "correo electrónico" es obligatorio.</span>
+                    </div>
+                    <div>
+                        <label for="numberinput" class="form-label">Teléfono:</label>
+                        <input type="phone" class="form-control" name="numberinput" id="numberinput" placeholder="+54 9 11 5555 1234">
+                        <span class="error" id="error-telefono">* El campo "teléfono" es obligatorio.</span>
+                    </div>
+                </div>
+            
+                <div class="select m-4">
+                    <label for="select1">Elige una opción</label>
+                    <select id="select1" class="form-select">
+                        <option value="0">Consulta</option>
+                        <option value="1">Sugerencia</option>
+                        <option value="2">Me gustaría sumarme</option>
+                        <option value="3">Otro</option>
+                    </select>
+                    <span class="error" id="error-select">Por favor, elija una opción.</span>
+                </div>
+            
+                <div class="consulta m-4">
+                    <label class="form-label"></label>
+                    <textarea class="form-control" id="consulta" placeholder="Escribe tu comentario"></textarea>
+                    <span class="error" id="error-consulta">* Por favor, déjenos su consulta.</span>
+                </div>
+            
+                <div class="form-check m-3">
+                    <div class="form-check">
+                        <label class="form-check-label" for="Notinput">Deseo recibir notificaciones</label>
+                        <input class="form-check-input" type="checkbox" value="" id="Notinput">
+                    </div>
+                </div>
+            
+                <div class="m-3">
+                    <button type="submit" id="btncon" name="btncon" class="enviar-formulario">Enviar formulario</button>
+                </div>
+            </form>
+            
+        
+        <h5>Debido al volumen de mensajes que recibimos en el dia a dia, tu consulta puede tardar hasta 72hs en ser
+            respondida.</h5>
+
+        <p>*Tus datos están protegidos, solo son para registro y control interno de nuestra empresa. Chequea nuestra <a
+                href="">Política de protección de datos</a></p>
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h4>Gracias por contactarnos. Responderemos a la brevedad.</h4>
+            <button id="modalButton">Ir al inicio</button>
+        </div>
+    </div>
+
+</div>
+    <!--FOOTER-->
+
+    <!--FOOTER NEWSLETTER FORMULARIO-->
+    <footer>
+        <div class="seccion-footer">
+            <form class="suscripcion">
+                <label for="email">Newsletter:</label><br>
+                <input type="email" id="email" name="email" id="email" required placeholder="Tu e-mail"><br><br>
+                <input type="submit" value="Suscribirse">
+            </form>
+
+        </div>
+
+        <!--FOOTER LINKS NAVEGACION-->
+
+    
+        <div class="seccion-footer">
+
+            <nav class="nav-footer">
+                <h6>Navegación</h6>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--FOOTER REDES SOCIALES-->
+
+
+        <div class="seccion-footer">
+            <h6>Seguinos en nuestras redes:</h6>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png"
+                        alt="instagram"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="./images/whatsapp.png" alt="whatsapp"></a>
+            </div>
+            <div class="faq">
+                <p>¿Tenes dudas o consultas? escribinos <a href="contacto.html"><span class="aqui">AQUI</span></a></p>
+                <p>¿Tuviste algun problema con tu producto? contactate con nosotros <a
+                        href="cambios-devoluciones.html"><span class="aqui">AQUI</span></a></p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--DERECHOS RESERVADOS-->
+
+    <div class="derechos">
+        <p>&copy; 2024 Todos los derechos reservados - Grupo 11 Codo a Codo Python FullStack</p>
+    </div>
+
+<script src="./js/validacion-contacto.js"></script>
+</body>
+
+</html>

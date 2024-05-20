@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Tienda de Magia</title>
+  <link rel="shortcut icon" href="./images/logotipo.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aclonica&family=Bree+Serif&family=Bungee+Spice&family=Madimi+One&family=Merienda:wght@300..900&family=Righteous&family=Special+Elite&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!--HEADER-->
+  <header class="encabezado">
+    <div class="logotipo">
+      <img src="./images/logotipo.png" alt="logo">
+    </div>
+    <div class="logo">Mi Tienda Juegos Craft</div>
+    <nav class="nav">
+      <ul>
+        <li class="activo"><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><img src="./images/login.png" alt="login" height="30" style="cursor: pointer;" onclick="openPopup()"></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--BANNER-->
+
+  <div class="banner">
+    <img src="./images/banner2.jpg" alt="banner">
+    <p class="lema">La mejor tienda online de juegos de mesa</p>
+  </div>
+
+  <!--PRODUCTOS-->
+
+  <main>
+<div class="animacion">
+  <div class="board">
+    <div class="cell"><p class="win">START</p></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"><p class="win">WIN</p></div>
+    <div class="piece"></div>
+  </div>
+</div>
+    <div class="titulo">
+      <h1>Ofertas especiales</h1>
+    </div>
+
+
+    <div class="container">
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="./images/monopoly.jpg" alt="">
+          <h3>Monopoly</h3>
+          <p class="oferta">10% OFF.</p>
+          <p class="precio-sin-descuento">$10.500</p>
+          <p class="precio-con-descuento">Precio: $9.450</p>
+          <a href="comprar.html" class="comprar">Ir a comprar</a>
+        </div>
+        <div class="grid-item">
+          <img src="./images/teg.jpg" alt="">
+          <h3>T.E.G.</h3>
+          <p class="oferta">15% OFF.</p>
+          <p class="precio-sin-descuento">$15.000</p>
+          <p class="precio-con-descuento">Precio: $12.750</p>
+          <a href="comprar.html" class="comprar">Ir a comprar</a>
+        </div>
+        <div class="grid-item">
+          <img src="./images/jumanji.jpg" alt="">
+          <h3>Jumanji</h3>
+          <p class="oferta">18% OFF.</p>
+          <p class="precio-sin-descuento">$13.000</p>
+          <p class="precio-con-descuento">Precio: $10.660</p>
+          <a href="comprar.html" class="comprar">Ir a comprar</a>
+        </div>
+        <div class="grid-item">
+          <img src="./images/juegovida.jpg" alt="">
+          <h3>Juego de la Vida</h3>
+          <p class="oferta">22% OFF.</p>
+          <p class="precio-sin-descuento">$19.000</p>
+          <p class="precio-con-descuento">Precio: $14.820</p>
+          <a href="comprar.html" class="comprar">Ir a comprar</a>
+        </div>
+        <div class="grid-item">
+          <img src="./images/trivial.jpg" alt="">
+          <h3>Trivial pursuit</h3>
+          <p class="oferta">20% OFF.</p>
+          <p class="precio-sin-descuento">$11.800</p>
+          <p class="precio-con-descuento">Precio: $9.440</p>
+          <a href="comprar.html" class="comprar">Ir a comprar</a>
+        </div>
+        <div class="grid-item">
+          <img src="./images/ajedrez.jpg" alt="">
+          <h3>Ajedrez</h3>
+          <p class="oferta">15% OFF.</p>
+          <p class="precio-sin-descuento">$21.000</p>
+          <p class="precio-con-descuento">Precio: $16.800</p>
+          <a href="comprar.html" class="comprar">Ir a comprar</a>
+        </div>
+        <div class="grid-item">
+          <img src="./images/uno.jpg" alt="">
+          <h3>UNO</h3>
+          <p class="oferta">5% OFF.</p>
+          <p class="precio-sin-descuento">$7.000</p>
+          <p class="precio-con-descuento">Precio: $6.650</p>
+          <a href="comprar.html" class="comprar">Ir a comprar</a>
+        </div>
+        <div class="grid-item">
+          <img src="./images/tronos.jpg" alt="">
+          <h3>Juego de tronos</h3>
+          <p class="oferta">30% OFF.</p>
+          <p class="precio-sin-descuento">$25.000</p>
+          <p class="precio-con-descuento">Precio: $17.500</p>
+          <a href="comprar.html" class="comprar">Ir a comprar</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="envio">
+      <div class="column">
+        <img src="./images/enviado.png" alt="Envio gratis">
+        <p>Envíos a todo el país</p>
+      </div>
+      <div class="separador"></div>
+      <div class="column">
+        <img src="./images/tarjeta-de-credito.png" alt="Medios de pago">
+        <p>Múltiples medios de pago</p>
+      </div>
+      <div class="separador"></div>
+      <div class="column">
+        <img src="./images/compra-protegida.png" alt="Compra protegida">
+        <p>Compra protegida</p>
+      </div>
+    </div>
+  </main>
+
+
+  <!--Inicio de sesion-->
+  <section class="form-login" id="form-login">
+    <h2>Inicia sesión</h2>
+    <h5>Ingrese su correo electrónico/email de Mi Tienda de Magia y contraseña</h5>
+    <form>
+      <label for="email">Direccion de correo electrónico:</label>
+      <input class="forminicio" type="email" name="correo" id="correo" placeholder="">
+      <label for="password">Contraseña:</label>
+      <input class="forminicio" type="password" name="password" id="password">
+
+      <p><a href="registro.html">Quiero registrarme</a></p>
+      <input class="botonlog" type="submit" value="Inicia sesión">
+    </form>
+  </section>
+  <script>
+    let popup = document.getElementById("form-login");
+    function openPopup() {
+      popup.classList.add("open-popup")
+    }
+  </script>
+
+  <!--FOOTER-->
+
+  <!--FOOTER NEWSLETTER FORMULARIO-->
+  <footer>
+    <div class="seccion-footer">
+      <form class="suscripcion">
+        <label for="email">¡No te pierdas FANTASTICAS OFERTAS! Suscribite a nuestro Newsletter:</label><br>
+        <input type="email" id="email" name="email" required placeholder="Tu e-mail"><br><br>
+        <input type="submit" value="Suscribirse">
+      </form>
+
+    </div>
+
+    <!--FOOTER LINKS NAVEGACION-->
+
+    <div class="seccion-footer">
+
+      <nav class="nav-footer">
+        <h6>Navegación</h6>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--FOOTER REDES SOCIALES-->
+
+    <div class="seccion-footer">
+      <h6>Seguinos en nuestras redes:</h6>
+      <div class="redes">
+        <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png" alt="instagram"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="./images/whatsapp.png" alt="whatsapp"></a>
+      </div>
+      <div class="faq">
+        <p>¿Tenes dudas o consultas? escribinos <a href="contacto.html"><span class="aqui">AQUI</span></a></p>
+        <p>¿Tuviste algun problema con tu producto? contactate con nosotros <a href="cambios-devoluciones.html"><span
+              class="aqui">AQUI</span></a></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!--DERECHOS RESERVADOS-->
+
+  <div class="derechos">
+    <p>&copy; 2024 Todos los derechos reservados - Grupo 11 Codo a Codo Python FullStack</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
